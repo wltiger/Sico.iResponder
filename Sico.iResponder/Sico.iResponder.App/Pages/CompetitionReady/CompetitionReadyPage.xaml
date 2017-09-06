@@ -1,0 +1,21 @@
+﻿<Page x:Class="Sico.iResponder.App.Pages.CompetitionReady.CompetitionReadyPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Sico.iResponder.App.Pages.CompetitionReady"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      Title="CompetitionReadyPage" FontFamily="方正铁筋隶书简体">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Background.png" AlignmentX="Left" AlignmentY="Top" Stretch="Fill"/>
+        </Grid.Background>
+        <Viewbox Stretch="Fill">
+            <Canvas Width="1920" Height="1080">
+                <Image Name="CountDownImage" Height="100" Canvas.Left="940" Canvas.Top="800"  Source="1.png"/>
+            </Canvas>
+        </Viewbox>
+    </Grid>
+</Page>

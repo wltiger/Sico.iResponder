@@ -1,0 +1,39 @@
+﻿<Page x:Class="Sico.iResponder.App.Pages.Competition.Page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Sico.iResponder.App.Pages.Competition"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      Title="互动知识抢答" FontFamily="方正铁筋隶书简体">
+    <Page.Resources>
+        <Style x:Key="QuestionBookTileStyle" TargetType="local:QuestionBookTile">
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Opacity="0.2" ShadowDepth="8" BlurRadius="6"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Background.png" AlignmentX="Left" AlignmentY="Top" Stretch="Fill"/>
+        </Grid.Background>
+        <Viewbox Stretch="Fill">
+            <Canvas Width="1920" Height="1080">
+                <local:QuestionBookTile x:Name="Book5" Canvas.Left="1289" Canvas.Top="523" Height="208" Style="{StaticResource QuestionBookTileStyle}" Cursor="Hand" MouseDown="QuestionBookTile_MouseDown"/>
+                <local:QuestionBookTile x:Name="Book1" Canvas.Left="258" Canvas.Top="523" Height="208" Style="{StaticResource QuestionBookTileStyle}" Cursor="Hand" MouseDown="QuestionBookTile_MouseDown"/>
+                <local:QuestionBookTile x:Name="Book4" Canvas.Left="1005" Canvas.Top="487" Height="283" Style="{StaticResource QuestionBookTileStyle}" Cursor="Hand" MouseDown="QuestionBookTile_MouseDown"/>
+                <local:QuestionBookTile x:Name="Book2" Canvas.Left="420" Canvas.Top="487" Height="283" Style="{StaticResource QuestionBookTileStyle}" Cursor="Hand" MouseDown="QuestionBookTile_MouseDown"/>
+                <local:QuestionBookTile x:Name="Book3" Canvas.Left="645" Canvas.Top="446" Style="{StaticResource QuestionBookTileStyle}" Cursor="Hand" MouseDown="QuestionBookTile_MouseDown"/>
+                <TextBlock Name="Participant1Ready" TextWrapping="Wrap" Text="1号选手就位" FontSize="48" Canvas.Left="250" Canvas.Top="839" />
+                <TextBlock Name="Participant2Ready" TextWrapping="Wrap" Text="2号选手就位" FontSize="48" Canvas.Left="600" Canvas.Top="839" />
+                <TextBlock Name="Participant3Ready" TextWrapping="Wrap" Text="3号选手就位" FontSize="48" Canvas.Left="1000" Canvas.Top="839" />
+                <TextBlock Name="Participant4Ready" TextWrapping="Wrap" Text="4号选手就位" FontSize="48" Canvas.Left="1360" Canvas.Top="839" />
+            </Canvas>
+        </Viewbox>
+
+    </Grid>
+</Page>
+

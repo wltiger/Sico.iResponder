@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="Sico.iResponder.App.Pages.Competition.QuestionBookTile"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Sico.iResponder.App.Pages.Competition"
+             mc:Ignorable="d" 
+             d:DesignHeight="370" d:DesignWidth="584">
+    <Grid>
+        <Viewbox Stretch="Fill">
+            <Canvas Width="584" Height="370">
+                <Border BorderBrush="#7dc586" BorderThickness="3" HorizontalAlignment="Left" Height="370" VerticalAlignment="Top" Width="584" d:IsLocked="True">
+                    <Image x:Name="Image" HorizontalAlignment="Left" Height="370" Margin="0,0" VerticalAlignment="Top" Width="584" Source="Background.png" Stretch="Fill"/>
+                </Border>
+                <Label x:Name="Title" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="75" Width="578" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="60" Content="题库标题" FontFamily="方正铁筋隶书简体" Foreground="#FF444444" Canvas.Left="3" Canvas.Top="292">
+                    <Label.Background>
+                        <SolidColorBrush Color="#FF7DC586" Opacity="0.75"/>
+                    </Label.Background>
+                </Label>
+            </Canvas>
+        </Viewbox>
+    </Grid>
+</UserControl>
